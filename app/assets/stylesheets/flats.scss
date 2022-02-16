@@ -1,0 +1,96 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// .card {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+//   background-color: lightgray;
+//   margin-top: 100px;
+//   border: 1px solid black;
+//   box-shadow: 10px 10px 20px red;
+// }
+
+// .image img {
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .card-content {
+//   flex-wrap: wrap;
+// }
+
+// .body {
+//   width: auto;
+//   padding: auto;
+//   margin: auto;
+// }
+
+ul li {
+  list-style-type: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  color: black;
+  opacity: 0.7;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.links:hover {
+  opacity: 1;
+}
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 100px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.container {
+  margin: 500px;
+  margin-top: 100px;
+}

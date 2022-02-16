@@ -1,0 +1,26 @@
+<h1>All our flats</h1>
+<span>Our <%= @flats.count %> flats</span>
+
+
+
+<% @flats.each do |flat| %>
+  <div class="card-trip">
+    <img src="https://picsum.photos/200/300" />
+    <div class="card-trip-infos">
+      <div>
+      <h2><%= flat.name %></h2>
+        <p><%= flat.address %></p>
+        <p><%= flat.description %></p>
+      </div>
+      <ul>
+        <li class="card-trip-pricing">$<%= flat.price_per_night %></li>
+        <li class="card-trip-pricing">👤<%= flat.number_of_guests %></li>
+      </ul>
+    </div>
+        <div class="footer">
+      <%= link_to "More info", flat_path(flat), class: "links" %>
+      <%= link_to "Edit", edit_flat_path(flat), class: "links" %>
+      <%= link_to "Remove", flat_path(flat), method: :delete, class: "links" %>
+    </div>
+  </div>
+<% end %>
