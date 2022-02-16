@@ -1,28 +1,37 @@
+<div class="to-flex">
+
+
+
 <div class="header"><h1>All our flats</h1>
 <span>Our <%= @flats.count %> flats</span>
 </div>
 
-
-<% @flats.each do |flat| %>
-  <div class="card-trip">
-    <img src="https://picsum.photos/2000/3000?<%= rand(1..500) %>" />
-    <div>
-      <div class="card-trip-infos">
-            <div class="card-container">
-            <h2 class="card-h2"><%= flat.name %></h2>
-              <p><%= flat.address %></p>
-              <p><%= flat.description %></p>
+<div class="all-cards">
+  <% @flats.each do |flat| %>
+    <div class="card-trip">
+      <img src="https://picsum.photos/2000/3000?<%= rand(1..500) %>" />
+      <div>
+        <div class="card-trip-infos">
+              <div class="card-container">
+              <h2 class="card-h2"><%= flat.name %></h2>
+                <p><%= flat.address %></p>
+                <p><%= flat.description %></p>
+              </div>
+            </div>
+              <ul>
+                <li class="card-trip-pricing">$<%= flat.price_per_night %></li>
+                <li class="card-trip-pricing"><%= flat.number_of_guests %> 👤</li>
+              </ul>
+                <div class="footer">
+              <%= link_to "More info", flat_path(flat), class: "links" %>
+              <%= link_to "Edit", edit_flat_path(flat), class: "links" %>
+              <%= link_to "Remove", flat_path(flat), method: :delete, class: "links" %>
             </div>
           </div>
-            <ul>
-              <li class="card-trip-pricing">$<%= flat.price_per_night %></li>
-              <li class="card-trip-pricing"><%= flat.number_of_guests %> 👤</li>
-            </ul>
-              <div class="footer">
-            <%= link_to "More info", flat_path(flat), class: "links" %>
-            <%= link_to "Edit", edit_flat_path(flat), class: "links" %>
-            <%= link_to "Remove", flat_path(flat), method: :delete, class: "links" %>
-          </div>
-        </div>
-    </div>
-<% end %>
+      </div>
+  <% end %>
+</div>
+
+
+
+</div>
