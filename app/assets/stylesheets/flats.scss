@@ -30,6 +30,13 @@
 
 ul li {
   list-style-type: none;
+  margin-right: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
 }
 
 .footer {
@@ -63,9 +70,11 @@ ul li {
 }
 
 .card-trip h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
+  margin-top: 5px;
+  margin-bottom: 25px;
 }
 
 .card-trip p {
@@ -90,7 +99,34 @@ ul li {
   width: 40px;
 }
 
+.card-trip-infos p{
+  margin-top: 5px;
+}
+
 .container {
   margin: 500px;
   margin-top: 100px;
+}
+
+.footer {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.header h1 {
+  font-size: 75px;
+}
+
+.header {
+  font-size: 10px;
+  text-align: center;
+}
+
+.card-container {
+  padding: 0px 30px 10px 30px;
 }

@@ -1,1 +1,11 @@
 <h1>Edit this flat</h1>
+
+<%= simple_form_for [@flat] do |f| %>
+<%= f.input  :name %>
+<%= f.input  :address %>
+<%= f.input  :name %>
+<%= f.input :description %>
+<%= f.number_field :price_per_night %>
+<%= f.number_field :number_of_guests %>
+<%= f.submit "Edit flat", class: "btn" %>
+<% end %>
