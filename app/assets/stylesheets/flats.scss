@@ -151,4 +151,13 @@ body {
   text-decoration: none;
   color: white;
   }
+
+
+  .footer-link{
+  opacity: 0.5;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
 }
