@@ -87,7 +87,7 @@ ul {
 
 
 .card-trip .card-trip-infos {
-  padding: 16px;
+  padding: 8px 16px 16px 16px;;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -122,6 +122,8 @@ ul {
 
 .header h1 {
   font-size: 75px;
+  text-shadow: 100 100 #ff0000;
+  text-shadow: 10 10 black;
 }
 
 .header {
@@ -141,4 +143,14 @@ ul {
 .to-flex {
   display: flex;
   flex-direction: column;
+}
+
+.header .flat_count {
+  display: flex;
+  justify-content: flex-end;
+  text-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+body {
+  background-color: rgba(211, 211, 211, 0.041);
 }
