@@ -2,8 +2,8 @@
 
 
 
-<div class="header" style="text-shadow: 3px 1px #9b939378;"><h1>All our flats</h1>
-<span class="flat-count" style="display: flex; justify-content: end; text-shadow: 10px 10px 15px rgba(0,0,0,0.2);">Our <%= @flats.count %> flats</span>
+<div class="header" style="text-shadow: 3px 1px #9b939378; margin-top: -100px; margin-bottom: 0px; "><h1 style="display: flex; font-size: 55px; font-family: 'Roboto', sans-serif; margin-left: 40px;">All our flats</h1>
+<span class="flat-count" style="display: flex; justify-content: end; text-shadow: 10px 10px 15px rgba(0,0,0,0.2);">Our (<%= @flats.count %>) flats</span>
 </div>
 
 <div class="all-cards">
@@ -13,7 +13,7 @@
       <div>
         <div class="card-trip-infos">
               <div class="card-container">
-              <h2 class="card-h2"><%= link_to flat.name, flat_path(flat), class: "links", style: "text-shadow: 3px 1px #9b939378;" %></h2>
+              <h2 class="card-h2"><%= link_to flat.name, flat_path(flat), class: "links", style: "text-shadow: 1px 1px #9b939378;" %></h2>
                 <p><%= flat.address %></p>
                 <p><%= flat.description %></p>
               </div>
@@ -25,7 +25,7 @@
                 <div class="footer">
               <%= link_to "More info", flat_path(flat), class: "links" %>
               <%= link_to "Edit", edit_flat_path(flat), class: "links" %>
-              <%= link_to "Remove", flat_path(flat), method: :delete, class: "links" %>
+              <%= link_to "Remove", flat_path(flat), method: :delete, data: {confirm: "You wanna delete your flat?"}, class: "links" %>
             </div>
           </div>
       </div>

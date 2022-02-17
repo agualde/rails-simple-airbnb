@@ -2,32 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-// .card {
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   background-color: lightgray;
-//   margin-top: 100px;
-//   border: 1px solid black;
-//   box-shadow: 10px 10px 20px red;
-// }
-
-// .image img {
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
-// .card-content {
-//   flex-wrap: wrap;
-// }
-
-// .body {
-//   width: auto;
-//   padding: auto;
-//   margin: auto;
-// }
-
 ul li {
   list-style-type: none;
   margin-right: 20px;
@@ -52,7 +26,7 @@ ul {
 }
 
 .links:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .card-trip {
@@ -77,12 +51,14 @@ ul {
   margin: 0;
   margin-top: 5px;
   margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .card-trip p {
   font-size: 12px;
   opacity: .7;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -103,6 +79,7 @@ ul {
 
 .card-trip-infos p{
   margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -153,4 +130,25 @@ ul {
 
 body {
   background-color: rgba(211, 211, 211, 0.041);
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.footer-main {
+  height: 100px;
+  background-color: black;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul li a{
+  text-decoration: none;
+  color: white;
+  }
 }

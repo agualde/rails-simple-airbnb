@@ -6,14 +6,19 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="nav-bar">
+    <div class="nav-bar" style="position: sticky; top: 0px; padding-top: 2px; background-color: #d3d3d33d;">
       <div class="logo">
-        <h2><%= link_to "AirBnB", flats_path, class: "links", style: " margin-left: 192px; text-shadow: 3px 1px #9b939378;" %></h2>
+        <h2 style="border-bottom: 1px solid lightgray;
+    padding-bottom: 17px; position: sticky; top: 0px; font-family: 'Roboto', sans-serif;"><%= link_to "AirBnB", flats_path, class: "links bold", style: " margin-left: 40px; text-shadow: 3px 1px #9b939378;" %></h2>
       </div>
     </div>
 
@@ -22,5 +27,17 @@
     <div class="container">
       <%= yield %>
     </div>
+
+      <div class="footer-main">
+    <ul>
+    <li><a href="#"> <i class="fa fa-twitter-square" aria-hidden="true"></i> </a></li>
+    <li><a href="#"> AAAAAAA </a></li>
+    <li><a href="#"> WHY WONT YOU WORK </a></li>
+    </ul>
+  </div>
+
   </body>
+
+
+
 </html>
